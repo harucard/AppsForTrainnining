@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <title>BorderRadiusPreviewer</title>
+  <style>
+    #windows {
+      width: 300px;
+      height: 300px;
+      border: 1px solid red;
+      float: left;
+      margin-right: 30px;
+
+    }
+
+    #button {
+      margin-top: 10px;
+      margin-left: 60px
+    }
+  </style>
+</head>
+
+<body>
+  <div id="windows" data-windowPreviewer="windows">
+
+  </div>
+  <div>
+    <H2>Border-Radius</H2><br>
+    top:<br>
+    <input type="text" data-top="top" value="0"><br>
+    Right:<br>
+    <input type="text" data-right="right" value="0"><br>
+    Buttom:<br>
+    <input type="text" data-buttom="buttom" value="0"><br>
+    Left:<br>
+    <input type="text" data-left="left" value="0"><br>
+    <button id="button" type="button" data-button="button">GO!</button>
+  </div>
+
+  <script src='BorderRadiusPreviewer.js'></script>
+</body>
+
+</html>
