@@ -1,2 +1,2 @@
 # AppsForTrainnining
-List of radom just for trainning  proposal
+List of radom apps just for trainning  proposal
