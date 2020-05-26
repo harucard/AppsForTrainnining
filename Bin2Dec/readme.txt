@@ -1,7 +1,7 @@
 Bin2Dec.js
 
 
-Requiriments:
+Requirements:
 
 NodeJs
 NPM
