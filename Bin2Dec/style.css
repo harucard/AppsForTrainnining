@@ -1,0 +1,32 @@
+body{
+  background-color:#fff;
+}
+
+form{
+ 
+  width: 80%;
+  height: 800px;
+  display:flex;
+  flex-direction: column;
+  background-color: #ccc;
+  margin:20px auto;
+  justify-content: center;
+  }
+  .input, .button{
+    width: 60%;
+    
+  }
+  .input{
+    
+    padding: 20px;
+    margin:60px auto 0; 
+  }
+.button{
+  padding: 20px;
+  margin:10px auto;
+}
+.error{
+  margin:10px auto;
+  border: 1px solid red;
+}
+

@@ -17,7 +17,7 @@
       spanError.innerHTML = "Digito incorreto"
       console.log('valor incorreto')
     } else {
-      spanError.innerHTML = "";
+      //spanError.innerHTML = "";
       console.log(evt.code)
     }
 
@@ -28,8 +28,9 @@
   function convert(evt) {
     console.log('foi')
     evt.preventDefault();
-    if (inputData.value) {
+    if (isBinaryNumber(inputData.value)) {
       spanResult.innerHTML = Bin2Dec(inputData.value);
+
     } else {
       console.log('erro')
     }
@@ -38,7 +39,15 @@
 
 
 
-  function isBinaryNumber(number) { }
+  function isBinaryNumber(number) {
+    var regex = /[0-1]+/g;
+    regex.test(number);
+
+    if (regex.lastIndex === number.length)
+      return true;
+    return false;
+
+  }
   function Bin2Dec(binaryNumber) {
 
     var decimal = binaryNumber.split('').reverse().reduce(function (acumulated, currentvalue, index) {

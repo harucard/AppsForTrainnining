@@ -5,15 +5,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Conversor Binario para Decimal</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <form action="" data-formulario="form">
-    <input data-input="input" type="text" required>
-    <span data-span="error"></span>
-    <input type="submit" data-input="convert" value="Converter"></button>
+    <input data-input="input" type="text" required class="input">
+    <span data-span="error" class="error"></span>
+    <span data-result="result" class="result"></span>
+    <input type="submit" data-input="convert" value="Converter" class="button"></button>
   </form>
-  <span data-result="result"></span>
+
   <script src="./js/Bin2Dec.js"></script>
 </body>
 
